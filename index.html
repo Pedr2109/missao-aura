@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <meta name="description" content="Missão Aura: descubra seu perfil para explorar um planeta desconhecido em 2089.">
+    <title>Missão Aura | Projeto 2089</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topbar">
+        <a class="logo" href="#" aria-label="Missão Aura, início">
+            <span class="logo-icon">A</span>
+            <span>AURA<span class="logo-red">/2089</span></span>
+        </a>
+        <span class="status"><span class="status-dot"></span> SISTEMA ONLINE</span>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="eyebrow"><span></span> PROTOCOLO DE EXPLORAÇÃO ESPACIAL</div>
+            <h1>DESCUBRA SEU<br> <span>PERFIL DE MISSÃO.</span></h1>
+            <p class="hero-description">
+                Ano 2089. Um planeta desconhecido aguarda a humanidade.
+                A equipe precisa de você. Descubra qual é o seu papel nesta missão.
+            </p>
+            <div class="hero-meta">
+                <span><b>01</b> IDENTIFICAÇÃO</span>
+                <span><b>02</b> ANÁLISE</span>
+                <span><b>03</b> RESULTADO</span>
+            </div>
+        </section>
+
+        <section class="panel" id="formulario">
+            <div class="panel-heading">
+                <div>
+                    <span class="section-label">ARQUIVO DE TRIPULANTE</span>
+                    <h2>Identificação</h2>
+                </div>
+                <span class="panel-number">01 / 03</span>
+            </div>
+
+            <form id="aura-form">
+                <div class="field">
+                    <label for="nome">NOME DO TRIPULANTE</label>
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome completo"
+                        maxlength="70" required>
+                </div>
+
+                <div class="field">
+                    <label for="nascimento">DATA DE NASCIMENTO</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
+
+                <div class="panel-heading quiz-heading">
+                    <div>
+                        <span class="section-label">AVALIAÇÃO DE COMPETÊNCIAS</span>
+                        <h2>Questionário</h2>
+                    </div>
+                    <span class="panel-number">02 / 03</span>
+                </div>
+
+                <p class="form-hint">Escolha uma resposta para cada situação.</p>
+
+                <fieldset class="question">
+                    <legend><span>01</span> A equipe encontra uma máquina desconhecida. O que você faz?</legend>
+                    <label class="option">
+                        <input type="radio" name="q1" value="engenheiro" required>
+                        <span>Investigo como ela funciona e tento consertá-la.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="cientista">
+                        <span>Estudo os dados e testo hipóteses.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="explorador">
+                        <span>Investigo o local em busca de pistas.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q1" value="estrategista">
+                        <span>Avalio os riscos antes de tomar uma decisão.</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend><span>02</span> Qual seria sua maior contribuição para a missão?</legend>
+                    <label class="option">
+                        <input type="radio" name="q2" value="engenheiro" required>
+                        <span>Construir e manter os equipamentos.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="cientista">
+                        <span>Descobrir como o planeta funciona.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="explorador">
+                        <span>Explorar territórios e encontrar recursos.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q2" value="estrategista">
+                        <span>Organizar a equipe e definir prioridades.</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend><span>03</span> Um imprevisto ameaça a expedição. Como você reage?</legend>
+                    <label class="option">
+                        <input type="radio" name="q3" value="engenheiro" required>
+                        <span>Procuro uma solução técnica rapidamente.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="cientista">
+                        <span>Analiso as evidências para entender o problema.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="explorador">
+                        <span>Vou verificar a situação de perto.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q3" value="estrategista">
+                        <span>Reorganizo o plano e coordeno a equipe.</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <legend><span>04</span> Qual ambiente mais desperta sua curiosidade?</legend>
+                    <label class="option">
+                        <input type="radio" name="q4" value="engenheiro" required>
+                        <span>Uma estação tecnológica cheia de máquinas.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="cientista">
+                        <span>Um laboratório com amostras desconhecidas.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="explorador">
+                        <span>Uma região selvagem nunca mapeada.</span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="q4" value="estrategista">
+                        <span>Uma central de comando com mapas e informações.</span>
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="primary-button">
+                    ANALISAR MEU PERFIL <span>↗</span>
+                </button>
+                <p class="form-hint">4 respostas necessárias para concluir a análise.</p>
+            </form>
+        </section>
+
+        <section id="resultado" class="panel result-panel" hidden aria-live="polite">
+            <div class="panel-heading">
+                <div>
+                    <span class="section-label">ANÁLISE CONCLUÍDA</span>
+                    <h2>Perfil identificado</h2>
+                </div>
+                <span class="panel-number">03 / 03</span>
+            </div>
+
+            <p class="result-greeting" id="saudacao"></p>
+            <div class="result-image-wrap">
+                <img id="imagem-perfil" src="" alt="">
+                <div class="image-overlay"></div>
+                <span class="image-tag">CLASSIFICAÇÃO AURA</span>
+            </div>
+            <p class="result-code" id="codigo-perfil"></p>
+            <h3 id="nome-perfil"></h3>
+            <p id="descricao-perfil" class="result-description"></p>
+
+            <div class="result-details">
+                <div>
+                    <span class="detail-label">FUNÇÃO PRINCIPAL</span>
+                    <p id="funcao-perfil"></p>
+                </div>
+                <div>
+                    <span class="detail-label">DIRETRIZ DA MISSÃO</span>
+                    <p id="dica-perfil"></p>
+                </div>
+            </div>
+
+            <button type="button" id="refazer" class="secondary-button">
+                ↻ REFAZER A AVALIAÇÃO
+            </button>
+        </section>
+
+        <footer>
+            <span>MISSÃO AURA © 2089</span>
+            <span>UM NOVO PLANETA. QUATRO PERFIS. UMA MISSÃO.</span>
+        </footer>
+    </main>
+</body>
+</html>
